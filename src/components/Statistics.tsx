@@ -282,7 +282,7 @@ export default function Statistics() {
                   dataKey="value"
                   paddingAngle={2}
                 >
-                  {awarenessData.map((entry, index) => (
+                  {awarenessData.map((_, index) => (
                     <Cell 
                       key={`cell-${index}`} 
                       fill={COLORS[index % COLORS.length]} 
@@ -335,7 +335,7 @@ export default function Statistics() {
                   dataKey="value"
                   paddingAngle={2}
                 >
-                  {satisfactionData.map((entry, index) => (
+                  {satisfactionData.map((_, index) => (
                     <Cell 
                       key={`cell-${index}`} 
                       fill={COLORS[index % COLORS.length]} 
@@ -388,7 +388,7 @@ export default function Statistics() {
                   dataKey="value"
                   paddingAngle={2}
                 >
-                  {reasonsData.map((entry, index) => (
+                  {reasonsData.map((_, index) => (
                     <Cell 
                       key={`cell-${index}`} 
                       fill={COLORS[index % COLORS.length]} 
